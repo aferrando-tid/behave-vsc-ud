@@ -18,7 +18,7 @@ const override_args = [
 export async function runBehaveAll(wkspSettings: WorkspaceSettings, run: vscode.TestRun, queue: QueueItem[], filterByQueue: boolean,
   cancelToken: vscode.CancellationToken): Promise<void> {
 
-  const pythonExec = await config.getPythonExecutable(wkspSettings.uri, wkspSettings.name);
+  const pythonExec = await config.getPythonExecutable(wkspSettings);
   const friendlyEnvVars = getFriendlyEnvVars(wkspSettings);
 
   let ps1 = "", ps2 = "";
@@ -53,7 +53,7 @@ export async function runOrDebugBehaveScenario(debug: boolean, async: boolean, w
 
     const scenario = queueItem.scenario;
     const scenarioName = scenario.scenarioName;
-    const pythonExec = await config.getPythonExecutable(wkspSettings.uri, wkspSettings.name);
+    const pythonExec = await config.getPythonExecutable(wkspSettings);
     const escapedScenarioName = getScenarioRunName(scenarioName, queueItem.scenario.isOutline);
     const friendlyEnvVars = getFriendlyEnvVars(wkspSettings);
 

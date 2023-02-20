@@ -362,7 +362,7 @@ async function getExtensionInstances(): Promise<TestSupport> {
 	if (extInstances)
 		return extInstances;
 
-	const extension = vscode.extensions.getExtension("jimasp.behave-vsc-tid");
+	const extension = vscode.extensions.getExtension("aferrando-tid.behave-vsc-tid");
 	assert(extension);
 	assert(extension.isActive);
 

@@ -11,7 +11,7 @@ export interface Configuration {
   readonly workspaceSettings: { [wkspUriPath: string]: WorkspaceSettings };
   readonly globalSettings: WindowSettings;
   reloadSettings(wkspUri: vscode.Uri, testConfig?: vscode.WorkspaceConfiguration): void;
-  getPythonExecutable(wkspUri: vscode.Uri, wkspName: string): Promise<string>;
+  getPythonExecutable(wksp: WorkspaceSettings): Promise<string>;
   dispose(): void;
 }
 
@@ -74,9 +74,13 @@ class ExtensionConfiguration implements Configuration {
   }
 
   // note - python interpreter can be changed dynamically by the user, so don't store the result
-  getPythonExecutable = async (wkspUri: vscode.Uri, wkspName: string) => {
+  getPythonExecutable = async (wksp: WorkspaceSettings) => {
     const msPyExt = "ms-python.python";
     const pyext = vscode.extensions.getExtension(msPyExt);
+
+    if(wksp.pythonPath) {
+      return wksp.pythonPath
+    }
 
     if (!pyext)
       throw (`Behave VSC could not find required dependency ${msPyExt}`);
@@ -87,9 +91,9 @@ class ExtensionConfiguration implements Configuration {
         throw (`Behave VSC could not activate required dependency ${msPyExt}`);
     }
 
-    const pythonExec = await pyext?.exports.settings.getExecutionDetails(wkspUri).execCommand[0];
+    const pythonExec = await pyext?.exports.settings.getExecutionDetails(wksp.uri).execCommand[0];
     if (!pythonExec)
-      throw (`Behave VSC failed to obtain python executable for ${wkspName} workspace from ${msPyExt}`);
+      throw (`Behave VSC failed to obtain python executable for ${wksp.name} workspace from ${msPyExt}`);
 
     return pythonExec;
   }

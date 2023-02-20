@@ -44,6 +44,7 @@ export class WorkspaceSettings {
   public readonly runParallel: boolean;
   public readonly runFileAsOne: boolean;
   public readonly workspaceRelativeFeaturesPath: string;
+  public readonly pythonPath?: string
   // convenience properties
   public readonly uri: vscode.Uri;
   public readonly name: string;
@@ -83,6 +84,8 @@ export class WorkspaceSettings {
     this.justMyCode = justMyCodeCfg;
     this.runParallel = runParallelCfg;
     this.runFileAsOne = runFileAsOneCfg
+
+    this.pythonPath = wkspConfig.get("pythonPath")
 
     const runAllAsOneCfg: boolean | undefined = getActualWorkspaceSetting(wkspConfig, "runAllAsOne");
     if (this.runParallel && runAllAsOneCfg === undefined)

@@ -67,6 +67,12 @@
 					"type": "boolean",
 					"markdownDescription": "Specifies whether all tests in a file are run in the same  behave instance when clicked on file or folder. Enabling this setting will behave exactly for a file or folder as running all your tests",
 					"default": false
+				},
+				"behave-vsc-tid.pythonPath": {
+					"scope": "resource",
+					"type": "string",
+					"markdownDescription": "Allows customizing the version of python to run behave with",
+					"default": ""
 				}
 			}
 		},
@@ -190,24 +196,24 @@
 		]
 	},
 	"name": "behave-vsc-tid",
-	"displayName": "Behave VSC",
+	"displayName": "Behave VSC TID",
 	"description": "Debug, Run and Navigate Python behave tests",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"icon": "images/behave-vsc-tid.png",
 	"galleryBanner": {
 		"color": "#2B2B2B",
 		"theme": "dark"
 	},
-	"publisher": "jimasp",
+	"publisher": "aferrando-tid",
 	"private": true,
 	"license": "SEE LICENSE IN LICENSE.txt",
-	"homepage": "https://github.com/jimasp/behave-vsc-tid/blob/main/README.md",
+	"homepage": "https://github.com/aferrando-tid/behave-vsc-tid/blob/main/README.md",
 	"bugs": {
-		"url": "https://github.com/jimasp/behave-vsc-tid/issues"
+		"url": "https://github.com/aferrando-tid/behave-vsc-tid/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jimasp/behave-vsc-tid.git"
+		"url": "https://github.com/aferrando-tid/behave-vsc-tid.git"
 	},
 	"engines": {
 		"vscode": "^1.72.2"

@@ -18,7 +18,7 @@ Includes two-way step navigation, Gherkin syntax highlighting, autoformatting, a
 - Automatic Gherkin syntax highlighting (colourisation), including smart parameter recognition.
 - This extension supports multi-root workspaces, so you can run features from more than one project in a single instance of vscode. (Each project folder must have its own distinct features/steps folders.)
 
-![Behave VSC demo gif](https://github.com/jimasp/behave-vsc-tid/raw/main/images/behave-vsc-tid.gif)
+![Behave VSC demo gif](https://github.com/aferrando-tid/behave-vsc-tid/raw/main/images/behave-vsc-tid.gif)
 
 ---
 
@@ -126,7 +126,7 @@ paths=my_tests/behave_features
 
 ### If you have used a previous version of this extension
 
-- Please read through the [release notes](https://github.com/jimasp/behave-vsc-tid/releases) for breaking changes. If that does not resolve your issue, then please rollback to the previous working version via the vscode uninstall dropdown and raise an [issue](https://github.com/jimasp/behave-vsc-tid/issues).
+- Please read through the [release notes](https://github.com/aferrando-tid/behave-vsc-tid/releases) for breaking changes. If that does not resolve your issue, then please rollback to the previous working version via the vscode uninstall dropdown and raise an [issue](https://github.com/aferrando-tid/behave-vsc-tid/issues).
 
 ### Otherwise
 
@@ -141,9 +141,9 @@ paths=my_tests/behave_features
 - Do you have runParallel turned on? Try turning it off.
 - Do you have the latest version of the extension installed? The problem may have been fixed in a newer release. (Please note that the latest version you can install is determined by your vscode version, so you may need to update vscode first.)
 - Check if the problem is in [Known Issues](#known-issues-and-limitations) below
-- Check if the issue has already been reported in github [issues](https://github.com/jimasp/behave-vsc-tid/issues?q=is%3Aissue).
+- Check if the issue has already been reported in github [issues](https://github.com/aferrando-tid/behave-vsc-tid/issues?q=is%3Aissue).
 - Try temporarily disabling other extensions.
-- Does your environment match the one tested for this release? You can check the environment tested for each release in [github](https://github.com/jimasp/behave-vsc-tid/releases) and downgrade as required.
+- Does your environment match the one tested for this release? You can check the environment tested for each release in [github](https://github.com/aferrando-tid/behave-vsc-tid/releases) and downgrade as required.
 - Any extension errors should pop up in a notification window, but you can also look at debug logs and error stacks by enabling `xRay` in the extension settings and using vscode command "Developer: Toggle Developer Tools".
 - The extension is only tested with a few example projects. It's possible that something specific to your project/setup/environment is not accounted for. See [Contributing](CONTRIBUTING.md) for instructions on debugging the extension with your own project. (If you debug with your own project, you may also wish to check whether the same issue occurs with one of the example project workspaces.)
 

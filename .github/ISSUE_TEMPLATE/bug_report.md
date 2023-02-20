@@ -7,9 +7,9 @@ assignees: ''
 
 ---
 
-NOTE: before posting an issue, please make sure you read through the Troubleshooting section of the readme: <https://github.com/jimasp/behave-vsc-tid/blob/main/README.md#troubleshooting>
+NOTE: before posting an issue, please make sure you read through the Troubleshooting section of the readme: <https://github.com/aferrando-tid/behave-vsc-tid/blob/main/README.md#troubleshooting>
 
-Please note that I can only support issues with the latest release (<https://github.com/jimasp/behave-vsc-tid/releases>) and the latest version of vscode. The supported behave version is 1.2.6.
+Please note that I can only support issues with the latest release (<https://github.com/aferrando-tid/behave-vsc-tid/releases>) and the latest version of vscode. The supported behave version is 1.2.6.
 
 **Describe the bug (required):**
 A clear and concise description of what the bug is.
@@ -35,7 +35,7 @@ If recording an animated gif of vscode, please enable "Developer: Toggle Screenc
 
 **Debug result (optional):**
 Did you enable the "behave-vsc-tid.xRay" setting? Did it give you any more information about the problem?
-Have you tried debugging the extension itself with your own workspace (via the instructions in <https://github.com/jimasp/behave-vsc-tid/blob/main/CONTRIBUTING.md>)?
+Have you tried debugging the extension itself with your own workspace (via the instructions in <https://github.com/aferrando-tid/behave-vsc-tid/blob/main/CONTRIBUTING.md>)?
 If so, what was the result?
 
 **Pull request with proposed fix (optional):**

@@ -10,7 +10,7 @@
 - Before starting any development, please make sure to *fully read through both the [README](README.md) and this document*. It may save you some development pain and/or solve your issue.
 - If you are going to be developing/debugging this extension, then disable the installed (marketplace) version of the extension. Leaving the extension enabled while debugging the extension can cause confusing side-effects via background execution.
 - If you want to contribute to this extension, please read through everything below, then fork the repo, make your changes, and submit a pull request.
-- This code is under the MIT licence (i.e. you are free to fork it and do your own thing as long as the [LICENSE](LICENSE.txt) is included), but please do contribute bug fix PRs to the [original repo](https://github.com/jimasp/behave-vsc-tid).
+- This code is under the MIT licence (i.e. you are free to fork it and do your own thing as long as the [LICENSE](LICENSE.txt) is included), but please do contribute bug fix PRs to the [original repo](https://github.com/aferrando-tid/behave-vsc-tid).
 - Bug fixes are great. New features will be considered, but see [Development guidelines](#development-guidelines).
 
 ---
@@ -36,7 +36,7 @@
 4. ***Close visual studio code***
 5. Open a command line window, go to your source folder, and clone the extension source code, example:
     - `cd mysourcedir`
-    - `git clone https://github.com/jimasp/behave-vsc-tid.git`
+    - `git clone https://github.com/aferrando-tid/behave-vsc-tid.git`
 6. Change to the cloned directory, and install required node packages:
     - `cd mysourcedir/behave-vsc-tid`
     - `npm install`
